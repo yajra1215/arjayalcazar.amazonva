@@ -27,19 +27,42 @@
         header {
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: #ffffff;
-            text-align: center;
-            padding: 4rem 1rem;
+            padding: 3rem 1.5rem;
             border-bottom: 4px solid var(--accent);
         }
+        .header-container {
+            max-width: 950px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .header-text {
+            flex: 1;
+            min-width: 280px;
+        }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 0.5rem;
             letter-spacing: -0.5px;
         }
         header p {
             color: #fbbf24;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 500;
+        }
+        .profile-img-container {
+            flex-shrink: 0;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .container {
             max-width: 950px;
@@ -115,8 +138,8 @@
             background-color: var(--accent);
             transform: translateY(-2px);
         }
-        footer {
-            text-align: center;
+        <footer>
+            <text-align: center;
             padding: 2rem;
             background-color: #0f172a;
             color: #94a3b8;
@@ -128,36 +151,44 @@
 <body>
 
     <header>
-        <h1>Amazon FBA Product Research Portfolio</h1>
-        <p>Data-Driven Product Hunter & E-Commerce Virtual Assistant</p>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Amazon FBA Product Research Portfolio</h1>
+                <p>Aspiring E-Commerce Virtual Assistant & Product Hunter</p>
+            </div>
+            <div class="profile-img-container">
+                <img src="profile.jpg" alt="Arjay Alcazar Profile Photo" class="profile-img">
+            </div>
+        </div>
     </header>
 
     <div class="container">
         <!-- About Section -->
         <section>
             <h2>About Me</h2>
-            <p>Hello! I am a results-driven Virtual Assistant specializing in <strong>Amazon FBA Product Research</strong> and market analysis. I help sellers discover high-demand, low-competition winning products with strong profit margins and verified ROI potential using industry-standard analytics tools.</p>
+            <p>Hello! I am an aspiring Virtual Assistant starting my journey as a beginner in <strong>Amazon FBA Product Research</strong>. While I am new to the industry, I have a strong foundational understanding of product research concepts, market metrics, and the essential tools needed to spot winning items. I am highly motivated, eager to learn more, and ready to put in the dedication to help Amazon sellers grow their stores.</p>
         </section>
 
         <!-- Tools & Expertise Section -->
         <section>
             <h2>Tools & Core Competencies</h2>
+            <p style="margin-bottom: 1rem; font-size: 0.95rem; color: #64748b;"><em>Note: Mayroon akong sapat na kaalaman at ideya sa paggamit ng mga sumusunod na tools at metrics, bagama't umaasa ako sa client-provided access o free features dahil wala pa akong sariling paid subscriptions.</em></p>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Keepa</h3>
-                    <p>Expert in analyzing historical price trends, sales ranks, buy box rotations, and competitor stock levels.</p>
+                    <p>May ideya at kaalaman sa pagbasa ng historical price trends, sales ranks, at competitor stock levels para sa product validation.</p>
                 </div>
                 <div class="skill-card">
                     <h3>Helium 10</h3>
-                    <p>Proficient in using Xray, Magnet, and Cerebro for keyword research, demand validation, and competitor tracking.</p>
+                    <p>Pamilyar sa paggamit ng Xray, Magnet, at Cerebro concepts para sa keyword demand at pagsusuri ng mga kakumpitensya.</p>
                 </div>
                 <div class="skill-card">
                     <h3>Jungle Scout</h3>
-                    <p>Skilled in niche evaluation, product tracker metrics, and estimating monthly revenue/sales volume.</p>
+                    <p>May kaalaman sa pag-interpret ng niche metrics, estimate ng monthly revenue, at sales volume data para salain ang potential products.</p>
                 </div>
                 <div class="skill-card">
                     <h3>Financial Validation</h3>
-                    <p>Advanced in calculating FBA fees, referral fees, net profit margins, and accurate ROI via Google Sheets.</p>
+                    <p>Marunong magkalkula ng FBA fees, referral fees, net profit margins, at ROI gamit ang Google Sheets.</p>
                 </div>
             </div>
         </section>
@@ -165,7 +196,7 @@
         <!-- Sampled Works Section -->
         <section class="work-showcase">
             <h2>Sampled Works</h2>
-            <p>Below is a snapshot of a recent product research analysis I conducted, demonstrating competitor data analysis and profitability metrics calculation.</p>
+            <p>Below is a snapshot of a product research analysis practice I conducted, demonstrating competitor data analysis and profitability metrics calculation.</p>
             
             <img src="spreadsheet-screenshot.png" alt="Amazon Product Research Google Sheet Screenshot" class="portfolio-img">
             
@@ -175,7 +206,7 @@
         <!-- Contact Section -->
         <section>
             <h2>Get In Touch</h2>
-            <p>Looking for a dedicated researcher for your Amazon store? Let's connect through any of the platforms below:</p>
+            <p>Looking for a hardworking and eager-to-learn assistant for your Amazon store? Let's connect through any of the platforms below:</p>
             <div class="contact-links">
                 <a href="mailto:arjayalcazar1215@gmail.com" class="btn">📧 Email Me</a>
                 <a href="https://wa.me/639455595120" target="_blank" class="btn">💬 WhatsApp</a>
